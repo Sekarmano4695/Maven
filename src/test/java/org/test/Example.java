@@ -19,7 +19,7 @@ public class Example {
 	WebElement dd = driver.findElement(By.id("pass"));
 	dd.sendKeys("78954");
 	
-	driver.findElement(By.id("loginbutton")).click();
+	System.out.println("my code was problem");
 		
 		
 	}
