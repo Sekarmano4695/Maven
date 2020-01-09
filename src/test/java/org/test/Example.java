@@ -14,13 +14,18 @@ public class Example {
 		driver.get("https://www.flipkart.com/");
 		
 		
-		driver.findElement(By.id("email")).sendKeys("mk");
-		driver.findElement(By.id("pass")).sendKeys("7896521");
-		
-		WebElement d = driver.findElement(By.xpath("//button[@value=loginbutton"));
-		d.click();
-		
-		
+		WebElement txtUser = driver.findElement(By.id("email"));
+		txtUser.sendKeys("greens");
+		WebElement txtPass = driver.findElement(By.id("pass"));
+		txtPass.sendKeys("java");
+		WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
+		btn.click();
+		WebElement txtUser = driver.findElement(By.id("email"));
+		txtUser.sendKeys("greens");
+		WebElement txtPass = driver.findElement(By.id("pass"));
+		txtPass.sendKeys("java");
+		WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
+		btn.click();
 		
 	}
 
