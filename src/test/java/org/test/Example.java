@@ -2,6 +2,7 @@ package org.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Example {
@@ -15,6 +16,10 @@ public class Example {
 		
 		driver.findElement(By.id("email")).sendKeys("mk");
 		driver.findElement(By.id("pass")).sendKeys("7896521");
+		
+		WebElement d = driver.findElement(By.xpath("//button[@value=loginbutton"));
+		d.click();
+		
 		
 		
 	}
