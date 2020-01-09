@@ -13,19 +13,28 @@ public class Example {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		
+	WebElement d = driver.findElement(By.id("email"));
+	d.sendKeys("jhhh");
+	WebElement dd = driver.findElement(By.id("pass"));
+	dd.sendKeys("78954");
+	
+	driver.findElement(By.id("loginbutton")).click();
+	
+	
+	WebElement txtUser = driver.findElement(By.id("email"));
+	txtUser.sendKeys("greens");
+	WebElement txtPass = driver.findElement(By.id("pass"));
+	txtPass.sendKeys("java");
+	WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
+	btn.click();
+	WebElement txtUser = driver.findElement(By.id("email"));
+	txtUser.sendKeys("greens");
+	WebElement txtPass = driver.findElement(By.id("pass"));
+	txtPass.sendKeys("java");
+	WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
+	btn.click();
 		
-		WebElement txtUser = driver.findElement(By.id("email"));
-		txtUser.sendKeys("greens");
-		WebElement txtPass = driver.findElement(By.id("pass"));
-		txtPass.sendKeys("java");
-		WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
-		btn.click();
-		WebElement txtUser = driver.findElement(By.id("email"));
-		txtUser.sendKeys("greens");
-		WebElement txtPass = driver.findElement(By.id("pass"));
-		txtPass.sendKeys("java");
-		WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
-		btn.click();
+
 		
 	}
 
